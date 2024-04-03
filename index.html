@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+        <img src="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMfMSQR6uQaqv6XWqEG1rg_qlTI3BCFJATTIm6emdFSg&s)">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li> 
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        </nav>
+       <div class="header-text">
+        <h1>HI I"M <span style="color: brown;">GO VIND</span><BR> THANK YOU <BR>FOR VISITING MY PROFILE</h1>
+       </div>
+     </div>
+     </div>
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/thug.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub">about me</h1>
+                <p>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading other people and tries to be fair in everything I do.
+                </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Expirience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills" >
+                    <ul> 
+                        <li><span>web development</span><br><span>personal portfolios</span></li>
+                        <li><span>forms in domain </span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expirience">
+                    <ul>
+                        <li><span>i have one year expirience inssk steels</span></li>
+                        <li><span>i have also expirience real time projects in my institute</span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br><span>B-tech</span></li>
+                        <li><span>2020</span><br><span>diploma</span></li>
+                        <li><span>2015</span><br><span>10th standard</span></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 style="color: olivedrab;">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/1.jpg">
+                    <div class="layer">
+                        <h3>social media</h3>
+                        <p>the app connects you the talentated peoplethe world</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/22.jpg">
+                    <div class="layer">
+                        <h3>music media</h3>
+                        <p>the app connects you the talentated peoplethe world</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/33.jpg">
+                    <div class="layer">
+                        <h3>online shoping</h3>
+                        <p>the app connects you the talentated peoplethe world</p>
+                        <a href="#"><i class="fas fa-external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+     <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p>govindsunkaraa@gmail.com</p>
+                <p>9848847335</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="">www.linkedin.com/in/govindraju11
+                        <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="NAME" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="messege"  rows="6" placeholder="your message"></textarea>
+                    <button type="submit">submit</button>
+                 </form>
+            </div>
+        </div>
+     </div>
+    </div>
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+</body>
+</html>
